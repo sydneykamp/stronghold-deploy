@@ -7,7 +7,7 @@
         <title>STRONGHOLD</title>
 
         <script src="https://cdn.tailwindcss.com"></script> <!-- **** REMOVE BEFORE PUSHING TO PRODUCTION **** -->
-        @vite(['resources/css/styles.css', 'resources/js/main.js', 'resources/js/app.js'])
+        @vite(['resources/css/styles.css', 'resources/js/main.js'])
     </head>
 
     <body>
