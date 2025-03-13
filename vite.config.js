@@ -7,8 +7,5 @@ export default defineConfig({
       input: ['resources/css/styles.css', 'resources/js/main.js'],
       refresh: true,
     }),
-  ],
-  build: {
-    outDir: 'public/build'
-  }
+  ]
 });
