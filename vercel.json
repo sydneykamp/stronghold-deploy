@@ -2,10 +2,6 @@
     "version": 2,
     "builds": [
       {
-        "src": "composer.json",
-        "use": "@vercel/php"
-      },
-      {
         "src": "package.json",
         "use": "@vercel/node"
       }
