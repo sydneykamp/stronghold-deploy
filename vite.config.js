@@ -6,6 +6,7 @@ export default defineConfig({
         laravel({
             input: ["resources/css/styles.css", "resources/js/main.js"],
             refresh: ["resources/views/**"],
+            detectTls: 'stronghold.test',
         }),
     ],
 });
