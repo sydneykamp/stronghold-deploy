@@ -5,6 +5,10 @@ use App\Http\Controllers\MemorialController;
 use App\Http\Controllers\TestimonialVideoController;
 use App\Http\Controllers\HomeController;
 
+Route::get('/{any}', function () {
+    return view('home');
+})->where('any', '.*');
+
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/about', function () {
