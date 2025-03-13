@@ -1,0 +1,25 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "composer.json",
+        "use": "@vercel/php"
+      },
+      {
+        "src": "package.json",
+        "use": "@vercel/node"
+      }
+    ],
+    "env": {
+      "APP_ENV": "production",
+      "APP_KEY": "base64:cvlUhyQxQFpxxz98Vp3aCljom39TUqEiVtcqukjIHwQ=",
+      "VITE_BUILD_DIR": "public/build"
+    },
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/public/$1"
+      }
+    ]
+  }
+  
